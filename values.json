@@ -1,0 +1,67 @@
+{
+  "@context": "https://raw.githubusercontent.com/w3c/earl/master/context.json",
+
+  "OutcomeValue": [
+  {
+    "@id": "earl:passed",
+    "@type": "Pass",
+    "title": "Passed",
+    "description": "the subject passed the test"
+  },
+  {
+    "@id": "earl:failed",
+    "@type": "Fail",
+    "title": "Failed",
+    "description": "the subject failed the test"
+  },
+  {
+    "@id": "earl:cantTell",
+    "@type": "CannotTell",
+    "title": "Cannot tell",
+    "description": "it is unclear if the subject passed or failed the test"
+  },
+  {
+    "@id": "earl:inapplicable",
+    "@type": "NotApplicable",
+    "title": "Inapplicable",
+    "description": "the test is not applicable to the subject"
+  },
+  {
+    "@id": "earl:untested",
+    "@type": "NotTested",
+    "title": "Untested",
+    "description": "the test has not been carried out"
+  } ],
+
+  "TestMode": [
+  {
+    "@id": "earl:automatic",
+    "@type": "TestMode",
+    "title": "Automatic",
+    "description": "where the test was carried out automatically by the software tool and without any human intervention"
+  },
+  {
+    "@id": "earl:manual",
+    "@type": "TestMode",
+    "title": "Manual",
+    "description": "where the test was carried out by human evaluators"
+  },
+  {
+    "@id": "earl:semiAuto",
+    "@type": "TestMode",
+    "title": "Semi-Automatic",
+    "description": "where the test was partially carried out by software tools, but where human input or judgment was still required to decide or help decide the outcome of the test"
+  },
+  {
+    "@id": "earl:undisclosed",
+    "@type": "TestMode",
+    "title": "Undisclosed",
+    "description": "where the exact testing process is undisclosed"
+  },
+  {
+    "@id": "earl:unknownmode",
+    "@type": "TestMode",
+    "title": "Unknown",
+    "description": "where the testing process is unknown or undetermined"
+  } ]
+}
