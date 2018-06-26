@@ -1,0 +1,93 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/w3c/earl/master/context.json",
+    "https://raw.githubusercontent.com/w3c/earl/master/values.json"
+  ],
+
+  "Assertor": [
+  {
+    "@id": "bigTool",
+    "@type": "Software",
+    "title": "Big Tool",
+    "description": "Enterprise tool by Tool Inc.",
+    "hasVersion": "8.3.4",
+    "hasPart": "#smallTool",
+    "homepage": "http://www.example.org/myTool"
+  },
+  {
+    "@id": "smallTool",
+    "@type": "Software",
+    "title": "Small Tool",
+    "description": "Automated checker by Tool Inc.",
+    "hasVersion": "1.1.3",
+    "isPartOf": { "@id": "#bigTool" },
+    "hasPart": { "@id": "#browserAgent" },
+    "homepage": "http://www.example.org/coolTool"
+  },
+  {
+    "@id": "browserAgent",
+    "@type": "Agent",
+    "title": "Browser Agent",
+    "description": "Headless Browser by Browse Inc.",
+    "hasVersion": "0.9.1"
+  },
+  {
+    "@id": "johnDoe",
+    "@type": "Person",
+    "firstName": "John",
+    "surname": "Doe",
+    "name": "John Doe",
+    "nick": "Jonny",
+    "mbox": "john.doe@example.com",
+    "mbox_sha1sum": "73ec53c4ba1747d485ae2a0d7bfafa6cda80a5a9",
+    "homepage": "http://www.example.com/john/"
+  },
+  {
+    "@id": "johnTool",
+    "@type": "Group",
+    "title": "John Tool",
+    "description": "John using bigTool",
+    "mainAssertor": { "@id": "#johnDoe" },
+    "member": { "@id": "#bigTool" }
+  },
+  {
+    "@id": "certBody",
+    "@type": "Organization",
+    "title": "Certification Body",
+    "description": "Determination by Cert Inc.",
+    "homepage": "http://www.example.org/cert/"
+  } ],
+  "TestSubject":
+  {
+    "@id": "http://www.example.com/welcome.html",
+    "@type": "WebPage",
+    "title": "Example Welcome Page",
+    "date": "2018-06-15"
+  },
+  "TestCriterion": [
+  {
+    "@id": "WCAG21:non-text-content",
+    "@type": "TestRequirement",
+    "title": "Success Criterion 1.1.1 Non-text Content"
+  },
+  {
+    "@id": "ACT:SC1-1-1-non-decorative-image-accessible-name.html",
+    "@type": "TestCase",
+    "title": "Non-decorative image has accessible name",
+    "description": "Each image that is not marked as decorative, has an accessible name",
+    "isPartOf": { "@id": "WCAG21:non-text-content" }
+  } ],
+  "Assertion":
+  {
+    "@id": "id54",
+    "assertedBy": { "@id": "#myTool" },
+    "subject": { "@id": "http://www.example.com/welcome.html" },
+    "test": { "@id": "ACT:SC1-1-1-non-decorative-image-accessible-name.html" },
+    "outcome": { "@id": "earl:failed" },
+    "mode": { "@id": "earl:automatic" }, 
+    "title": "Assertion id54",
+    "description": "automatic check carried out on previously fetched content",
+    "info": "non-decorative image without accessible name",
+    "date": "2018-06-23"
+  }  
+}
