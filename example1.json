@@ -57,6 +57,7 @@
     "description": "Determination by Cert Inc.",
     "homepage": "http://www.example.org/cert/"
   } ],
+
   "TestSubject":
   {
     "@id": "http://www.example.com/welcome.html",
@@ -64,6 +65,7 @@
     "title": "Example Welcome Page",
     "date": "2018-06-15"
   },
+
   "TestCriterion": [
   {
     "@id": "WCAG21:non-text-content",
@@ -77,17 +79,21 @@
     "description": "Each image that is not marked as decorative, has an accessible name",
     "isPartOf": { "@id": "WCAG21:non-text-content" }
   } ],
+
   "Assertion":
   {
     "@id": "id54",
     "assertedBy": { "@id": "#myTool" },
     "subject": { "@id": "http://www.example.com/welcome.html" },
     "test": { "@id": "ACT:SC1-1-1-non-decorative-image-accessible-name.html" },
-    "outcome": { "@id": "earl:failed" },
-    "mode": { "@id": "earl:automatic" }, 
-    "title": "Assertion id54",
-    "description": "automatic check carried out on previously fetched content",
-    "info": "non-decorative image without accessible name",
-    "date": "2018-06-23"
+    "result": {
+      "@type": "earl:TestResult",
+      "outcome": { "@id": "earl:failed" },
+      "info": "non-decorative image without accessible name",
+      "title": "Assertion id54",
+      "description": "automatic check carried out on previously fetched content",
+      "date": "2018-06-23"
+    },
+    "mode": { "@id": "earl:automatic" }
   }  
 }
