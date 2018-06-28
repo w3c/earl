@@ -1,11 +1,22 @@
 {
   "@vocab": "http://www.w3.org/ns/earl#",
 
+  "cnt": "http://www.w3.org/2011/content#",
+  "dct": "http://purl.org/dc/terms/",
+  "earl": "http://www.w3.org/ns/earl#",
+  "foaf": "http://xmlns.com/foaf/spec/",
+  "htp": "http://www.w3.org/2011/http#",
+  "ptr": "https://www.w3.org/2009/pointers#",
   "schema": "http://schema.org/",
+  "xsd": "https://www.w3.org/2001/XMLSchema#",
+
+  "WCAG20": "https://www.w3.org/TR/WCAG20#",
+  "WCAG21": "https://www.w3.org/TR/WCAG21#",
+  "ACT": "https://auto-wcag.github.io/auto-wcag/rules/"
+
   "WebSite": "schema:WebSite",
   "WebPage": "schema:WebPage",
 
-  "dct": "http://purl.org/dc/terms/",
   "title": "dct:title",
   "description": "dct:description",
   "date": "dct:date",
@@ -14,7 +25,6 @@
   "hasPart": "dct:hasPart",
   "source": "dct:source",
 
-  "foaf": "http://xmlns.com/foaf/spec/",
   "Agent": "foaf:term_Agent",
   "Person": "foaf:term_Person",
   "Organization": "foaf:term_Organization",
@@ -28,33 +38,83 @@
   "member": "foaf:term_member",
   "homepage": "foaf:term_homepage",
 
-  "earl": "http://www.w3.org/ns/earl#",
   "Assertion": "earl:Assertion",
   "Assertor": "earl:Assertor",
   "TestSubject": "earl:TestSubject",
   "TestCriterion": "earl:TestCriterion",
-  "TestRequirement": "earl:TestRequirement",
-  "TestCase": "earl:TestCase",
+  "TestRequirement": {
+    "@id": "earl:TestRequirement",
+    "@type": "TestCriterion"
+  },
+  "TestCase": {
+    "@id": "earl:TestCase",
+    "@type": "TestCriterion"
+  },
   "TestResult": "earl:TestResult",
   "TestMode": "earl:TestMode",
   "OutcomeValue": "earl:OutcomeValue",
-  "Pass": "earl:Pass",
-  "Fail": "earl:Fail",
-  "CannotTell": "earl:CannotTell",
-  "NotApplicable": "earl:NotApplicable",
-  "NotTested": "earl:NotTested",
+  "Pass": {
+    "@id": "earl:Pass",
+    "@type": "OutcomeValue"
+  },
+  "Fail": {
+    "@id": "earl:Fail",
+    "@type": "OutcomeValue"
+  },
+  "CannotTell": {
+    "@id": "earl:CannotTell",
+    "@type": "OutcomeValue"
+  },
+  "NotApplicable": {
+    "@id": "earl:NotApplicable",
+    "@type": "OutcomeValue"
+  },
+  "NotTested": {
+    "@id": "earl:NotTested",
+    "@type": "OutcomeValue"
+  },
   "Software": "earl:Software",
-  "assertedBy": "earl:assertedBy",
-  "subject": "earl:subject",
-  "test": "earl:test",
-  "result": "earl:result",
-  "mode": "earl:mode",
-  "mainAssertor": "earl:mainAssertor",
-  "outcome": "earl:outcome",
-  "pointer": "earl:pointer",
-  "info": "earl:info",
+  "assertedBy": {
+    "@id": "earl:assertedBy",
+    "@type": "Assertor"
+  },
+  "subject": {
+    "@id": "earl:subject",
+    "@type": "TestSubject"
+  },
+  "test": {
+    "@id": "earl:test",
+    "@type": "TestCriterion"
+  },
+  "result": {
+    "@id": "earl:result",
+    "@type": "TestResult"
+  },
+  "mode": {
+    "@id": "earl:mode",
+    "@type": "TestMode"
+  },
+  "mainAssertor": {
+    "@id": "earl:mainAssertor",
+    "@type": "Assertor"
+  },
+  "outcome": {
+    "@id": "earl:outcome",
+    "@type": "OutcomeValue"
+  },
+  "pointer": {
+    "@id": "earl:pointer",
+    "@type": "ptr:PointerPointer"
+  },
+  "info": {
+    "@id": "earl:info",
+    "@type": "xsd:Literal"
+  },
+  "failed": {
+    "@id": "earl:failed",
+    "@type": "Fail"
+  },
 
-  "cnt": "http://www.w3.org/2011/content#",
   "Content": "cnt:Content",
   "ContentAsBase64": "cnt:ContentAsBase64",
   "ContentAsText": "cnt:ContentAsText",
@@ -74,7 +134,6 @@
   "publicId": "cnt:publicId",
   "systemId": "cnt:systemId",
 
-  "htp": "http://www.w3.org/2011/http#",
   "Connection": "htp:Connection",
   "EntityHeader": "htp:EntityHeader",
   "GeneralHeader": "htp:GeneralHeader",
@@ -115,7 +174,6 @@
   "statusCodeNumber": "htp:statusCodeNumber",
   "statusCodeValue": "htp:statusCodeValue",
 
-  "ptr": "https://www.w3.org/2009/pointers#",
   "ByteOffsetPointer": "ptr:ByteOffsetPointer",
   "ByteOffsetCompoundPointer": "ptr:ByteOffsetCompoundPointer",
   "ByteSnippetCompoundPointer": "ptr:ByteSnippetCompoundPointer",
@@ -151,8 +209,4 @@
   "reference": "ptr:reference",
   "startPointer": "ptr:startPointer",
   "version": "ptr:version",
-
-  "WCAG20": "https://www.w3.org/TR/WCAG20#",
-  "WCAG21": "https://www.w3.org/TR/WCAG21#",
-  "ACT": "https://auto-wcag.github.io/auto-wcag/rules/"
 }
