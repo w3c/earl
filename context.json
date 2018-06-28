@@ -190,7 +190,6 @@
   "PointersGroup": "ptr:PointersGroup",
   "CompoundPointer": "ptr:CompoundPointer",
   "RelatedPointers": "ptr:RelatedPointers",
-  "ShadowPointer": "ptr:ShadowPointer",
   "SinglePointer": "ptr:SinglePointer",
   "StartEndPointer": "ptr:StartEndPointer",
   "XPathPointer": "ptr:XPathPointer",
@@ -218,5 +217,8 @@
   },
   "a11yExpectation": {
     "@type": "TestCase"
+  },
+  "ShadowPointer": {
+    "@type": "ptr:SinglePointer"
   }
 }
