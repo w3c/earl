@@ -12,7 +12,7 @@
 
   "WCAG20": "https://www.w3.org/TR/WCAG20#",
   "WCAG21": "https://www.w3.org/TR/WCAG21#",
-  "ACT": "https://auto-wcag.github.io/auto-wcag/rules/"
+  "ACT": "https://auto-wcag.github.io/auto-wcag/rules/",
 
   "WebSite": "schema:WebSite",
   "WebPage": "schema:WebPage",
@@ -209,4 +209,14 @@
   "reference": "ptr:reference",
   "startPointer": "ptr:startPointer",
   "version": "ptr:version",
+
+  "ACTrule": {
+    "@type": "TestCase"
+  },
+  "a11yReq": {
+    "@type": "TestRequirement"
+  },
+  "a11yExpectation": {
+    "@type": "TestCase"
+  }
 }
