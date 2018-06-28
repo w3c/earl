@@ -112,7 +112,8 @@
   },
   "failed": {
     "@id": "earl:failed",
-    "@type": "Fail"
+    "@type": "Fail",
+    "title": "Failed"
   },
 
   "Content": "cnt:Content",
