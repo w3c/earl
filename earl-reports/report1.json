@@ -1,0 +1,85 @@
+{
+    "@context": {
+        "earl": "https://www.w3.org/ns/earl#",
+        "dct": "http://purl.org/dc/terms/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "doap": "http://usefulinc.com/ns/doap#",
+        "imergo": "https://imergo.com/ns/imergo/",
+
+        "title": "dct:title",
+        "description": "dct:description",
+        "abstract": "dct:abstract",
+        "conformsTo": "dct:conformsTo",
+        "date": "dct:date",
+        "hasPart": "dct:hasPart",
+        "isPartOf": "dct:isPartOf",
+        "language": "dct:language",
+        "column": "imergo:column",
+        "row": "imergo:row",
+        "sourceLocator": "imergo:sourceLocator",
+        "xpath": "imergo:xpath",
+        "info": "earl:info",
+        "outcome": "earl:outcome",
+        "pointer": "earl:pointer",
+        "homepage": "foaf:homepage",
+        "member": "foaf:member",
+        "mbox": "foaf:mbox",
+        "name": "foaf:name",
+        "nick": "foaf:nick",
+        "phone": "foaf:phone",
+        "created": "doap:created",
+        "release": "doap:release",
+        "assertedBy": "earl:assertedBy",
+        "mode": "earl:mode",
+        "result": "earl:result",
+        "subject": "earl:subject",
+        "test": "earl:test"
+    },
+    "@graph": [
+        {
+            "@id": "91bce261-ee8b-11e8-a8b5-6372b6d1c2c2",
+            "@type": "earl:Assertion",
+            "assertedBy": {
+                "@id": "https://imergo.com/",
+                "@type": "earl:Software",
+                "title": "imergo® Web Compliance Suite",
+                "description": "",
+                "homepage": "https://imergo.com/",
+                "name": "imergo® Web Compliance Suite",
+                "release": "5.0"
+            },
+            "mode": {
+                "@id": "http://www.w3.org/ns/earl#automatic",
+                "@type": "earl:TestMode",
+                "description": "The test was carried out automatically by the software tool and without any human intervention.",
+                "title": "AUTOMATIC"
+            },
+            "result": {
+                "@id": "91bce260-ee8b-11e8-a8b5-6372b6d1c2c2",
+                "@type": "earl:TestResult",
+                "title": "FAIL",
+                "description": "No text alternative was found for this non-text element. If there are no text alternatives provided for <img>, <area>, or <input> elements of type 'image', the content is not accessible for users with visual limitations and for users who cannot display images due to performance or privacy reasons. Note: Text alternatives of images should describe their purpose clearly, for example, the function of a graphical button, the destination of a graphical link, or the relevant information of an image. Purely decorative images need to be marked up by an empty text alternative (\"\") to be ignored by assistive technologies.",
+                "info": "WCAG 2.1: technique F65",
+                "outcome": {
+                    "@id": "http://www.w3.org/ns/earl#failed",
+                    "@type": "earl:Fail",
+                    "title": "FAIL",
+                    "description": "The subject failed the test."
+                },
+                "pointer": {
+                    "@id": "91bcbb50-ee8b-11e8-a8b5-6372b6d1c2c2",
+                    "@type": "imergo:Pointer",
+                    "xpath": "/HTML/BODY/DIV[1]/IMG"
+                }
+            },
+            "subject": {
+                "@id": "907daba2-ee8b-11e8-a8b5-6372b6d1c2c2",
+                "@type": "earl:TestSubject"
+            },
+            "test": {
+                "@id": "http://imergo.com/ns/compliance/wcag20/techniques/F65",
+                "@type": "earl:TestCriterion"
+            }
+        }
+    ]
+}
