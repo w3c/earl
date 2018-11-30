@@ -1,65 +1,75 @@
 [
   {
-    "@id": "_:request",
+    "@id": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-1-1-image-has-name_passed_example_1.html",
     "@type": [
-      "http://www.w3.org/ns/earl#TestSubject",
-      "http://www.w3.org/2011/http#Request"
+      "http://www.w3.org/ns/earl#TestSubject"
     ],
-    "http://www.w3.org/2011/http#methodName": [
-      {
-        "@value": "GET"
-      }
-    ],
-    "http://www.w3.org/2011/http#requestURI": [
-      {
-        "@value": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-1-1-image-has-name_passed_example_1.html"
-      }
-    ]
-  },
-  {
-    "@id": "_:response",
-    "@type": [
-      "http://www.w3.org/ns/earl#TestSubject",
-      "http://www.w3.org/2011/http#Response"
-    ],
-    "http://www.w3.org/2011/http#body": [
-      {
-        "@type": [
-          "http://www.w3.org/2011/content#ContentAsText"
-        ],
-        "http://www.w3.org/2011/content#characterEncoding": [
-          {
-            "@value": "UTF-8"
-          }
-        ],
-        "http://www.w3.org/2011/content#chars": [
-          {
-            "@value": "<img alt=\"W3C logo\" />\n"
-          }
-        ]
-      }
-    ],
-    "http://www.w3.org/2011/http#statusCodeValue": [
-      {
-        "@value": 200
-      }
-    ]
-  },
-  {
-    "@id": "_:document",
-    "@type": [
-      "http://www.w3.org/ns/earl#TestSubject",
-      "http://www.w3.org/2011/content#ContentAsText"
-    ],
-    "http://www.w3.org/2011/content#characterEncoding": [
-      {
-        "@value": "UTF-8"
-      }
-    ],
-    "http://www.w3.org/2011/content#chars": [
-      {
-        "@value": "<html><head></head><body><img alt=\"W3C logo\">\n</body></html>"
-      }
+    "http://purl.org/dc/terms/hasPart": [
+      [
+        {
+          "@id": "_:request",
+          "@type": [
+            "http://www.w3.org/ns/earl#TestSubject",
+            "http://www.w3.org/2011/http#Request"
+          ],
+          "http://www.w3.org/2011/http#methodName": [
+            {
+              "@value": "GET"
+            }
+          ],
+          "http://www.w3.org/2011/http#requestURI": [
+            {
+              "@value": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-1-1-image-has-name_passed_example_1.html"
+            }
+          ]
+        },
+        {
+          "@id": "_:response",
+          "@type": [
+            "http://www.w3.org/ns/earl#TestSubject",
+            "http://www.w3.org/2011/http#Response"
+          ],
+          "http://www.w3.org/2011/http#body": [
+            {
+              "@type": [
+                "http://www.w3.org/2011/content#ContentAsText"
+              ],
+              "http://www.w3.org/2011/content#characterEncoding": [
+                {
+                  "@value": "UTF-8"
+                }
+              ],
+              "http://www.w3.org/2011/content#chars": [
+                {
+                  "@value": "<img alt=\"W3C logo\" />\n"
+                }
+              ]
+            }
+          ],
+          "http://www.w3.org/2011/http#statusCodeValue": [
+            {
+              "@value": 200
+            }
+          ]
+        },
+        {
+          "@id": "_:document",
+          "@type": [
+            "http://www.w3.org/ns/earl#TestSubject",
+            "http://www.w3.org/2011/content#ContentAsText"
+          ],
+          "http://www.w3.org/2011/content#characterEncoding": [
+            {
+              "@value": "UTF-8"
+            }
+          ],
+          "http://www.w3.org/2011/content#chars": [
+            {
+              "@value": "<html><head></head><body><img alt=\"W3C logo\">\n</body></html>"
+            }
+          ]
+        }
+      ]
     ]
   },
   {
@@ -128,17 +138,9 @@
       }
     ],
     "http://www.w3.org/ns/earl#subject": [
-      [
-        {
-          "@id": "_:request"
-        },
-        {
-          "@id": "_:response"
-        },
-        {
-          "@id": "_:document"
-        }
-      ]
+      {
+        "@id": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-1-1-image-has-name_passed_example_1.html"
+      }
     ],
     "http://www.w3.org/ns/earl#test": [
       [
@@ -191,17 +193,9 @@
       }
     ],
     "http://www.w3.org/ns/earl#subject": [
-      [
-        {
-          "@id": "_:request"
-        },
-        {
-          "@id": "_:response"
-        },
-        {
-          "@id": "_:document"
-        }
-      ]
+      {
+        "@id": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-1-1-image-has-name_passed_example_1.html"
+      }
     ],
     "http://www.w3.org/ns/earl#test": [
       [
