@@ -1,0 +1,201 @@
+[
+  {
+    "@id": "_:request",
+    "@type": [
+      "http://www.w3.org/ns/earl#TestSubject",
+      "http://www.w3.org/2011/http#Request"
+    ],
+    "http://www.w3.org/2011/http#methodName": [
+      {
+        "@value": "GET"
+      }
+    ],
+    "http://www.w3.org/2011/http#requestURI": [
+      {
+        "@value": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-1-1-image-has-name_passed_example_1.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:response",
+    "@type": [
+      "http://www.w3.org/ns/earl#TestSubject",
+      "http://www.w3.org/2011/http#Response"
+    ],
+    "http://www.w3.org/2011/http#body": [
+      {
+        "@type": [
+          "http://www.w3.org/2011/content#ContentAsText"
+        ],
+        "http://www.w3.org/2011/content#characterEncoding": [
+          {
+            "@value": "UTF-8"
+          }
+        ],
+        "http://www.w3.org/2011/content#chars": [
+          {
+            "@value": "<img alt=\"W3C logo\" />\n"
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/2011/http#statusCodeValue": [
+      {
+        "@value": 200
+      }
+    ]
+  },
+  {
+    "@id": "_:document",
+    "@type": [
+      "http://www.w3.org/ns/earl#TestSubject",
+      "http://www.w3.org/2011/content#ContentAsText"
+    ],
+    "http://www.w3.org/2011/content#characterEncoding": [
+      {
+        "@value": "UTF-8"
+      }
+    ],
+    "http://www.w3.org/2011/content#chars": [
+      {
+        "@value": "<html><head></head><body><img alt=\"W3C logo\">\n</body></html>"
+      }
+    ]
+  },
+  {
+    "@type": [
+      "http://www.w3.org/ns/earl#Assertion"
+    ],
+    "http://www.w3.org/ns/earl#assertedBy": [
+      {
+        "@id": "https://github.com/siteimprove/alfa",
+        "@type": [
+          "http://www.w3.org/ns/earl#Software"
+        ]
+      }
+    ],
+    "http://www.w3.org/ns/earl#result": [
+      [
+        {
+          "@type": [
+            "http://www.w3.org/ns/earl#TestResult"
+          ],
+          "http://www.w3.org/ns/earl#outcome": [
+            {
+              "@id": "http://www.w3.org/ns/earl#passed"
+            }
+          ],
+          "http://www.w3.org/ns/earl#pointer": [
+            {
+              "@type": [
+                "https://www.w3.org/2009/pointers#Pointer",
+                "https://www.w3.org/2009/pointers#XPathPointer"
+              ],
+              "https://www.w3.org/2009/pointers#expression": [
+                {
+                  "@value": "//HTML[1]/BODY[1]/IMG[1]"
+                }
+              ],
+              "https://www.w3.org/2009/pointers#reference": [
+                {
+                  "@id": "_:document"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ],
+    "http://www.w3.org/ns/earl#subject": [
+      [
+        {
+          "@id": "_:request"
+        },
+        {
+          "@id": "_:response"
+        },
+        {
+          "@id": "_:document"
+        }
+      ]
+    ],
+    "http://www.w3.org/ns/earl#test": [
+      [
+        {
+          "@id": "https://siteimprove.github.io/sanshikan/rules/sia-r2.html",
+          "@type": [
+            "http://www.w3.org/ns/earl#TestCase"
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "@type": [
+      "http://www.w3.org/ns/earl#Assertion"
+    ],
+    "http://www.w3.org/ns/earl#assertedBy": [
+      {
+        "@id": "https://github.com/siteimprove/alfa",
+        "@type": [
+          "http://www.w3.org/ns/earl#Software"
+        ]
+      }
+    ],
+    "http://www.w3.org/ns/earl#result": [
+      [
+        {
+          "@type": [
+            "http://www.w3.org/ns/earl#TestResult"
+          ],
+          "http://www.w3.org/ns/earl#outcome": [
+            {
+              "@id": "http://www.w3.org/ns/earl#cantTell"
+            }
+          ],
+          "http://www.w3.org/ns/earl#pointer": [
+            {
+              "@type": [
+                "https://www.w3.org/2009/pointers#Pointer",
+                "https://www.w3.org/2009/pointers#XPathPointer"
+              ],
+              "https://www.w3.org/2009/pointers#expression": [
+                {
+                  "@value": "//HTML[1]/BODY[1]/IMG[1]"
+                }
+              ],
+              "https://www.w3.org/2009/pointers#reference": [
+                {
+                  "@id": "_:document"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    ],
+    "http://www.w3.org/ns/earl#subject": [
+      [
+        {
+          "@id": "_:request"
+        },
+        {
+          "@id": "_:response"
+        },
+        {
+          "@id": "_:document"
+        }
+      ]
+    ],
+    "http://www.w3.org/ns/earl#test": [
+      [
+        {
+          "@id": "https://www.w3.org/TR/WCAG/#non-text-content",
+          "@type": [
+            "http://www.w3.org/ns/earl#TestRequirement"
+          ]
+        }
+      ]
+    ]
+  }
+]
