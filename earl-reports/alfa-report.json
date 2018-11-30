@@ -63,48 +63,69 @@
     ]
   },
   {
+    "@id": "https://github.com/siteimprove/alfa",
+    "@type": [
+      "http://www.w3.org/ns/earl#Assertor",
+      "http://www.w3.org/ns/earl#Software",
+      "http://usefulinc.com/ns/doap#Project"
+    ],
+    "http://usefulinc.com/ns/doap#name": [
+      {
+        "@value": "Alfa"
+      }
+    ],
+    "http://usefulinc.com/ns/doap#vendor": [
+      {
+        "@id": "https://siteimprove.com/",
+        "@type": [
+          "http://xmlns.com/foaf/spec/#Organization"
+        ],
+        "http://xmlns.com/foaf/spec/#name": [
+          {
+            "@value": "Siteimprove A/S"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "@type": [
       "http://www.w3.org/ns/earl#Assertion"
     ],
     "http://www.w3.org/ns/earl#assertedBy": [
       {
-        "@id": "https://github.com/siteimprove/alfa",
-        "@type": [
-          "http://www.w3.org/ns/earl#Software"
-        ]
+        "@id": "https://github.com/siteimprove/alfa"
       }
     ],
     "http://www.w3.org/ns/earl#result": [
-      [
-        {
-          "@type": [
-            "http://www.w3.org/ns/earl#TestResult"
-          ],
-          "http://www.w3.org/ns/earl#outcome": [
-            {
-              "@id": "http://www.w3.org/ns/earl#passed"
-            }
-          ],
-          "http://www.w3.org/ns/earl#pointer": [
-            {
-              "@type": [
-                "https://www.w3.org/2009/pointers#Pointer",
-                "https://www.w3.org/2009/pointers#XPathPointer"
-              ],
-              "https://www.w3.org/2009/pointers#expression": [
-                {
-                  "@value": "//HTML[1]/BODY[1]/IMG[1]"
-                }
-              ],
-              "https://www.w3.org/2009/pointers#reference": [
-                {
-                  "@id": "_:document"
-                }
-              ]
-            }
-          ]
-        }
-      ]
+      {
+        "@type": [
+          "http://www.w3.org/ns/earl#TestResult"
+        ],
+        "http://www.w3.org/ns/earl#outcome": [
+          {
+            "@id": "http://www.w3.org/ns/earl#passed"
+          }
+        ],
+        "http://www.w3.org/ns/earl#pointer": [
+          {
+            "@type": [
+              "https://www.w3.org/2009/pointers#Pointer",
+              "https://www.w3.org/2009/pointers#XPathPointer"
+            ],
+            "https://www.w3.org/2009/pointers#expression": [
+              {
+                "@value": "//HTML[1]/BODY[1]/IMG[1]"
+              }
+            ],
+            "https://www.w3.org/2009/pointers#reference": [
+              {
+                "@id": "_:document"
+              }
+            ]
+          }
+        ]
+      }
     ],
     "http://www.w3.org/ns/earl#subject": [
       [
@@ -136,43 +157,38 @@
     ],
     "http://www.w3.org/ns/earl#assertedBy": [
       {
-        "@id": "https://github.com/siteimprove/alfa",
-        "@type": [
-          "http://www.w3.org/ns/earl#Software"
-        ]
+        "@id": "https://github.com/siteimprove/alfa"
       }
     ],
     "http://www.w3.org/ns/earl#result": [
-      [
-        {
-          "@type": [
-            "http://www.w3.org/ns/earl#TestResult"
-          ],
-          "http://www.w3.org/ns/earl#outcome": [
-            {
-              "@id": "http://www.w3.org/ns/earl#cantTell"
-            }
-          ],
-          "http://www.w3.org/ns/earl#pointer": [
-            {
-              "@type": [
-                "https://www.w3.org/2009/pointers#Pointer",
-                "https://www.w3.org/2009/pointers#XPathPointer"
-              ],
-              "https://www.w3.org/2009/pointers#expression": [
-                {
-                  "@value": "//HTML[1]/BODY[1]/IMG[1]"
-                }
-              ],
-              "https://www.w3.org/2009/pointers#reference": [
-                {
-                  "@id": "_:document"
-                }
-              ]
-            }
-          ]
-        }
-      ]
+      {
+        "@type": [
+          "http://www.w3.org/ns/earl#TestResult"
+        ],
+        "http://www.w3.org/ns/earl#outcome": [
+          {
+            "@id": "http://www.w3.org/ns/earl#cantTell"
+          }
+        ],
+        "http://www.w3.org/ns/earl#pointer": [
+          {
+            "@type": [
+              "https://www.w3.org/2009/pointers#Pointer",
+              "https://www.w3.org/2009/pointers#XPathPointer"
+            ],
+            "https://www.w3.org/2009/pointers#expression": [
+              {
+                "@value": "//HTML[1]/BODY[1]/IMG[1]"
+              }
+            ],
+            "https://www.w3.org/2009/pointers#reference": [
+              {
+                "@id": "_:document"
+              }
+            ]
+          }
+        ]
+      }
     ],
     "http://www.w3.org/ns/earl#subject": [
       [
