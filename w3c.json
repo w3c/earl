@@ -1,4 +1,5 @@
  {
-    "group":      ["35422"]
+    "group":      [35422]
 ,   "contacts":   ["nitedog"]
+  , "repo-type": ["tool"]
 }
